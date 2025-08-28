@@ -8,7 +8,7 @@ class ApplicationTests {
 
     @Test
     void contextLoads() {
-        //TODO test yozish kerak
+        // yerga qachondir test yoziladi
     }
 
 }
