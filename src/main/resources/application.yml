@@ -1,0 +1,27 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: reference
+  config:
+    import: optional:file:.env[.properties]
+  profiles:
+    active: dev
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/reference-dbo
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    date-format: yyyy-MM-dd HH:mm:ss
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui/index.html
+
