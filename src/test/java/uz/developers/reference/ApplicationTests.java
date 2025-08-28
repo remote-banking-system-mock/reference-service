@@ -8,7 +8,7 @@ class ApplicationTests {
 
     @Test
     void contextLoads() {
-        // yerga qachondir test yoziladi
+        // shu yerga qachondir test yoziladi
     }
 
 }
